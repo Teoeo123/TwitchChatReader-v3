@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitchChatReader-v3", "TwitchChatReader-v3.csproj", "{7CD7A6EC-21FC-40F9-AF6C-48B85B68B584}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitchChatReaderCore", "..\TwitchChatReaderCore\TwitchChatReaderCore.csproj", "{C3E96563-5A48-4D98-9094-8E64B7C8CA9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CD7A6EC-21FC-40F9-AF6C-48B85B68B584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD7A6EC-21FC-40F9-AF6C-48B85B68B584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD7A6EC-21FC-40F9-AF6C-48B85B68B584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD7A6EC-21FC-40F9-AF6C-48B85B68B584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E96563-5A48-4D98-9094-8E64B7C8CA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E96563-5A48-4D98-9094-8E64B7C8CA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E96563-5A48-4D98-9094-8E64B7C8CA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E96563-5A48-4D98-9094-8E64B7C8CA9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2C0FC8D-6DDB-4FE1-92E2-6DDCFDD10E71}
+	EndGlobalSection
+EndGlobal

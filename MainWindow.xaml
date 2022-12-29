@@ -1,0 +1,54 @@
+﻿<Window x:Class="TwitchChatReader_v3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TwitchChatReader_v3"
+        mc:Ignorable="d"
+        ResizeMode="CanResizeWithGrip"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStyle="None"
+        MinHeight="400"
+        MinWidth="600"
+        Title="MainWindow" Height="900" Width="1240">
+    <Border Background="#323235" CornerRadius="10, 10,0, 10" BorderBrush="#282830" BorderThickness="3">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Background="#282830" FlowDirection="RightToLeft"
+                        Mouse.MouseDown="StackPanel_MouseDown">
+                <Ellipse Fill="Red" Height="15" Width="15" Margin="0,0,8,0" MouseLeftButtonDown="ClickRed"></Ellipse>
+                <Ellipse Fill="Green" Height="15" Width="15" Margin="0,0,8,0" MouseLeftButtonDown="ClickGreen" ></Ellipse>
+                <Ellipse Fill="Yellow" Height="15" Width="15" Margin="0,0,8,0" MouseLeftButtonDown="ClickYellow" ></Ellipse>
+                <Ellipse Fill="black" Height="15" Width="15" Margin="0,0,8,0" MouseLeftButtonDown="ClickBlack" ></Ellipse>
+            </StackPanel>
+
+            <Border x:Name="searchbar" Grid.Row="1" Background="white" Width="350" Height="40" VerticalAlignment="Top" Visibility="Visible"
+                     CornerRadius="0,0,6,6">
+                <TextBox x:Name="textboxsb" Background="Transparent" FontSize="30" BorderBrush="Transparent" BorderThickness="0" KeyDown="Search">
+
+                </TextBox>
+            </Border>
+
+            <TextBlock Grid.Row="1" x:Name="WSlabel" FontSize="82" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="GothicE" TextWrapping="Wrap" Visibility="Visible"
+                       Background="Transparent">
+                    Wyszukaj streamera
+            </TextBlock>
+            <Grid x:Name="StackChat" Grid.Row="1" Visibility="Hidden">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100*"></ColumnDefinition>
+                    <ColumnDefinition Width="100*"></ColumnDefinition>
+                    <ColumnDefinition Width="100*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <local:ChatControl  Grid.Column="0" x:Name="chat1" ></local:ChatControl>
+                <local:ChatControl Grid.Column="1" x:Name="chat2"></local:ChatControl>
+                <local:ChatControl  Grid.Column="2" x:Name="chat3"></local:ChatControl>
+            </Grid>
+
+        </Grid>
+    </Border>
+</Window>
